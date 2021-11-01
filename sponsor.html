@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Sponsor Riskin</title>
+    <link href="https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css" rel="stylesheet">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="style.css" rel="stylesheet">
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/eff21d28c7.js"></script>
+    <script src="app.js"></script>
+</head>
+
+<body>
+<header id="navbar-top">
+    <div id="navigation">
+        <button id="menu-burger" onclick="toggleMenu()">
+            <span class="button-menu"></span>
+            <span class="button-menu"></span>
+            <span class="button-menu"></span>
+        </button>
+        <img alt="Logo de Riskin" id="img-logo" src="Home/Pictures/Logo-riskin.png">
+        <div id="overlay" onclick="toggleMenu()">
+            <div id="overlay-content">
+                <a href="index.html">ACCUEIL</a>
+                <a href="stream.html">STREAM</a>
+                <a href="sponsor.html">SPONSOR</a>
+            </div>
+        </div>
+    </div>
+    <div id="navbar-top-desktop">
+        <a href="index.html">ACCUEIL</a>
+        <a href="stream.html">STREAM</a>
+        <a href="sponsor.html">SPONSOR</a>
+    </div>
+</header>
+<div id="line-top"></div>
+
+<div id="container-sponsor">
+    <img alt="Image de titre de la page sponsor" id="img-sponsor" src="Home/Pictures/Bannière.jpg">
+    <h1 id="title-sponsor">SPONSOR</h1>
+</div>
+<div id="container-img-sponsor">
+<a href="https://www.eneba.com/fr?af_id=riskin" id="container-eneba"> <img alt="Image Eneba" id="img-eneba"
+                                                      src="Home/Pictures/Eneba.png"></a>
+<a href="https://www.razer.com/fr-fr/gaming/headsets/razer-barracuda-x?irclickid=TO62lw2fqxyIWsXSfqTut39BUkBX9ZQv4zZYyQ0&irgwc=1" id="container-razer"><img
+        alt="Imag Razer" id="img-razer" src="Home/Pictures/Razer.png"></a>
+<a href="https://levlup.fr/?ref=1279" id="container-lvlup"><img alt="Image level up" id="img-lvlup" src="Home/Pictures/Lvlup.jpeg"></a>
+</div>
+<footer>
+
+    <div>
+        <div class="dropdown-menu">
+            <div onclick="openandCloseDropdownMenu1()">
+                <a id="nav-footer">NAVIGATION <i class="fas fa-chevron-down icon-transition" id="nav-icon"></i></a>
+            </div>
+            <ul class="sub-menu" id="menu1">
+                <li><a href="index.html">ACCUEIL</a></li>
+                <li><a href="stream.html">STREAM</a></li>
+                <li><a href="https://www.youtube.com/c/RiskiNHD">YOUTUBE</a></li>
+                <li><a href="sponsor.html">SPONSOR</a></li>
+            </ul>
+        </div>
+
+        <div class="dropdown-menu">
+            <div onclick="openandCloseDropdownMenu2()">
+                <a id="info-footer">INFORMATIONS <i class="fas fa-chevron-down icon-transition" id="info-icon"></i> </a>
+            </div>
+        </div>
+        <div class="dropdown-menu">
+            <div onclick="openandCloseDropdownMenu3()">
+                <a id="social-footer">RÉSEAUX SOCIAUX <i class="fas fa-chevron-down icon-transition"
+                                                         id="social-icon"></i> </a>
+            </div>
+            <ul class="sub-menu" id="menu3">
+                <li><a href="https://twitter.com/rsknxzu"><i class="fa fa-twitter"></i>TWITTER</a></li>
+                <li><a href="https://www.youtube.com/c/RiskiNHD"><i class="fa fa-youtube-play"></i>YOUTUBE</a></li>
+                <li><a href="https://www.instagram.com/rsknxzu/?hl=fr"><i class="fa fa-instagram"></i>INSTAGRAM</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <div id="menu-footer">
+        <div>
+            <h2>NAVIGATION</h2>
+            <ul class="container-footer">
+                <li><a href="index.html">ACCUEIL</a></li>
+                <li><a href="stream.html">STREAM</a></li>
+                <li><a href="https://www.youtube.com/c/RiskiNHD">YOUTUBE</a></li>
+                <li><a href="sponsor.html">SPONSOR</a></li>
+            </ul>
+        </div>
+        <div>
+            <h2>INFORMATIONS</h2>
+        </div>
+        <div>
+            <h2>RÉSEAUX SOCIAUX</h2>
+            <ul class="container-footer">
+                <li><a href="https://twitter.com/rsknxzu"><i class="fa fa-twitter"></i>TWITTER</a></li>
+                <li><a href="https://www.youtube.com/c/RiskiNHD"><i class="fa fa-youtube-play"></i>YOUTUBE</a></li>
+                <li><a href="https://www.instagram.com/rsknxzu/?hl=fr"><i class="fa fa-instagram"></i>INSTAGRAM</a></li>
+            </ul>
+        </div>
+    </div>
+
+</footer>
+</body>

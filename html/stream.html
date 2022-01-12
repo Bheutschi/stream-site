@@ -2,14 +2,14 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Sponsor Riskin</title>
     <link href="https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css" rel="stylesheet">
-    <meta content="width=device-width, initial-scale=1" name="viewport">
-    <link href="style.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
     <script crossorigin="anonymous" src="https://kit.fontawesome.com/eff21d28c7.js"></script>
-    <script src="app.js"></script>
+    <script src="../javascript/app.js"></script>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
+    <title>Stream Riskin</title>
 </head>
-
 <body>
 <header id="navbar-top">
     <div id="navigation">
@@ -18,12 +18,15 @@
             <span class="button-menu"></span>
             <span class="button-menu"></span>
         </button>
-        <img alt="Logo de Riskin" id="img-logo" src="Home/Pictures/Logo-riskin.png">
+        <img alt="Logo de Riskin" id="img-logo" src="../Home/Pictures/Logo-riskin.png">
         <div id="overlay" onclick="toggleMenu()">
             <div id="overlay-content">
                 <a href="index.html">ACCUEIL</a>
                 <a href="stream.html">STREAM</a>
                 <a href="sponsor.html">SPONSOR</a>
+                <a href="palmares.html">PALMARÈS</a>
+                <a href="palmares.html">COACHING</a>
+                <a href="questionnaire.html">QUESTIONNAIRE</a>
             </div>
         </div>
     </div>
@@ -31,21 +34,32 @@
         <a href="index.html">ACCUEIL</a>
         <a href="stream.html">STREAM</a>
         <a href="sponsor.html">SPONSOR</a>
+        <a href="palmares.html">PALMARÈS</a>
+        <a href="coaching.html">COACHING</a>
+        <a href="questionnaire.html">QUESTIONNAIRE</a>
     </div>
+
+
 </header>
 <div id="line-top"></div>
+<div id="home-stream">
+    <iframe id="player-stream" src="https://player.twitch.tv/?channel=riskin&parent=localhost"></iframe>
+    <iframe id="chat-embed" src="https://www.twitch.tv/embed/riskin/chat?parent=localhost"></iframe>
+</div>
+<div id="container-connection">
+    <a href="https://www.twitch.tv/settings/connections" id="connection">
+        <span id="connection-twitch">CONNEXION</span>
+        <span id="twitch-tv">Twitch.tv</span>
+    </a>
 
-<div id="container-sponsor">
-    <img alt="Image de titre de la page sponsor" id="img-sponsor" src="Home/Pictures/Bannière.jpg">
-    <h1 id="title-sponsor">SPONSOR</h1>
+    <div id="sub-follow">
+        <a class="follow-sub" href="https://www.twitch.tv/riskin" target="_blank"><span
+                class="fas fa-heart"></span><span id="follow-text">SUIVRE</span></a>
+        <a class="follow-sub" href="https://www.twitch.tv/subs/riskin" target="_blank"><span
+                class="fas fa-bahai"></span><span id="sub-text">S'ABONNER</span></a>
+    </div>
 </div>
-<div id="container-img-sponsor">
-<a href="https://www.eneba.com/fr?af_id=riskin" id="container-eneba"> <img alt="Image Eneba" id="img-eneba"
-                                                      src="Home/Pictures/Eneba.png"></a>
-<a href="https://www.razer.com/fr-fr/gaming/headsets/razer-barracuda-x?irclickid=TO62lw2fqxyIWsXSfqTut39BUkBX9ZQv4zZYyQ0&irgwc=1" id="container-razer"><img
-        alt="Imag Razer" id="img-razer" src="Home/Pictures/Razer.png"></a>
-<a href="https://levlup.fr/?ref=1279" id="container-lvlup"><img alt="Image level up" id="img-lvlup" src="Home/Pictures/Lvlup.jpeg"></a>
-</div>
+
 <footer>
 
     <div>
@@ -103,4 +117,8 @@
     </div>
 
 </footer>
+
+
 </body>
+
+</html>

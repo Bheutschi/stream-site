@@ -1,4 +1,4 @@
-// detecte quant on clique
+// detecte quand on clique
 // enlever la class "overlay-hidden"
 // remetre la classe si clic dans vide
 window.addEventListener("load", function (event) {

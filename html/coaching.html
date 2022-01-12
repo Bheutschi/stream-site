@@ -2,14 +2,12 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <title>Riskin.tv</title>
     <link href="https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="../css/style.css" rel="stylesheet">
     <script crossorigin="anonymous" src="https://kit.fontawesome.com/eff21d28c7.js"></script>
-    <script src="app.js"></script>
-    <meta content="width=device-width, initial-scale=1.0"
-          name="viewport">
-    <meta content="ie=edge" http-equiv="X-UA-Compatible">
-    <title>Stream Riskin</title>
+    <script src="../javascript/app.js"></script>
 </head>
 <body>
 <header id="navbar-top">
@@ -19,12 +17,15 @@
             <span class="button-menu"></span>
             <span class="button-menu"></span>
         </button>
-        <img alt="Logo de Riskin" id="img-logo" src="Home/Pictures/Logo-riskin.png">
+        <img alt="Logo de Riskin" id="img-logo" src="../Home/Pictures/Logo-riskin.png">
         <div id="overlay" onclick="toggleMenu()">
             <div id="overlay-content">
                 <a href="index.html">ACCUEIL</a>
                 <a href="stream.html">STREAM</a>
                 <a href="sponsor.html">SPONSOR</a>
+                <a href="palmares.html">PALMARÈS</a>
+                <a href="coaching.html">COACHING</a>
+                <a href="questionnaire.html">QUESTIONNAIRE</a>
             </div>
         </div>
     </div>
@@ -32,27 +33,38 @@
         <a href="index.html">ACCUEIL</a>
         <a href="stream.html">STREAM</a>
         <a href="sponsor.html">SPONSOR</a>
+        <a href="palmares.html">PALMARÈS</a>
+        <a href="coaching.html">COACHING</a>
+        <a href="questionnaire.html">QUESTIONNAIRE</a>
     </div>
-
-
 </header>
 <div id="line-top"></div>
-<div id="home-stream">
-    <iframe id="player-stream" src="https://player.twitch.tv/?channel=riskin&parent=localhost"></iframe>
-    <iframe id="chat-embed" src="https://www.twitch.tv/embed/riskin/chat?parent=localhost"></iframe>
+<h1 id="head-coaching">COACHING</h1>
+<div>
+    <p id="paragraph-coach">Tu voudrais t'améliorer sur Warzone ou les FPS en général ? <br>Alors hésite pas à remplir le formulaire d'inscription si dessous
+        <br>et Riskin se fera un plaisir de t'aider.</p>
 </div>
-<div id="container-connection">
-    <a href="https://www.twitch.tv/settings/connections" id="connection">
-        <span id="connection-twitch">CONNEXION</span>
-        <span id="twitch-tv">Twitch.tv</span>
-    </a>
-
-    <div id="sub-follow">
-        <a class="follow-sub" href="https://www.twitch.tv/riskin" target="_blank"><span class="fas fa-heart"></span><span id="follow-text">SUIVRE</span></a>
-        <a class="follow-sub" href="https://www.twitch.tv/subs/riskin" target="_blank"><span class="fas fa-bahai"></span><span id="sub-text">S'ABONNER</span></a>
-    </div>
+<div id="body-formulaire">
+    <form id="formulaire">
+        <label class="font-form" for="fname">Prénom:</label><br>
+        <input id="fname" name="fname" type="text"><br>
+        <label class="font-form" for="lname">Nom:</label><br>
+        <input id="lname" name="lname" type="text"><br>
+        <label class="font-form" for="email">Entre ton email:</label><br>
+        <input id="email" name="email" type="email"><br>
+        <p class="font-form">Votre plateforme ?</p>
+        <input id="pc" name="fav_language" type="radio" value="pc">
+        <label for="pc">Pc</label><br>
+        <input id="play" name="fav_language" type="radio" value="play">
+        <label for="play">Ps4/Ps5</label><br>
+        <input id="xbox" name="fav_language" type="radio" value="xbox">
+        <label for="xbox">Xbox One / Xbox série x</label><br><br>
+        <p class="font-form">Fichier vidéo d'un de tes gameplay pour évaluer ton niveau:</p>
+        <label for="myfile">Selectionne un fichier:</label>
+        <input id="myfile" name="myfile" type="file"><br><br>
+        <input id="submit" type="submit" value="Envoyez">
+    </form>
 </div>
-
 <footer>
 
     <div>
@@ -110,8 +122,6 @@
     </div>
 
 </footer>
-
-
 </body>
 
-</html>
+

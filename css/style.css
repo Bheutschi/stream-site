@@ -13,9 +13,13 @@ a {
     text-decoration: none;
     color: white;
 }
+
 h2 {
     color: white;
     font-size: clamp(1.5rem, 2vw, 3rem);
+}
+h3  {
+    font-size: 1rem;
 }
 
 span {
@@ -38,6 +42,11 @@ body {
     margin: 0;
 }
 
+p{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+}
 /* HEADER */
 
 #img-logo {
@@ -81,7 +90,7 @@ body {
 
 #overlay {
     display: none;
-    height: 100vh;
+    height: 100%;
     width: 100%;
     top: 0;
     left: 0;
@@ -118,7 +127,6 @@ body {
 }
 
 
-
 /* BODY */
 .home-stream {
     padding-top: 56.25%;
@@ -137,9 +145,10 @@ body {
 #chat-embed {
     display: none;
 }
+
 #youtube-desktop {
     width: 100%;
-    height:auto;
+    height: auto;
 }
 
 
@@ -183,7 +192,6 @@ body {
 }
 
 
-
 .fa-bahai {
     color: #B91010;
 }
@@ -225,6 +233,112 @@ body {
     margin-left: auto;
     margin-right: auto;
     margin-top: 10px;
+}
+
+
+#title-awards {
+    color: aliceblue;
+    text-align: center;
+    font-size: 60px;
+    margin-top: 20px;
+}
+/* Tableau Palmares */
+#table-brouillon {
+    border-collapse:collapse ;
+    text-align: center;
+    width: 80%;
+    background: #63150b;
+    margin: 0 10% 0 10%;
+}
+
+
+#competiton {
+    width: 25%;
+    font-size: 2rem;
+}
+
+#lieu {
+    width: 25%;
+    font-size: 2rem;
+}
+
+#classement {
+    width: 25%;
+    font-size: 2rem;
+
+}
+
+td {
+    color: #b91010;
+    font-size: 1rem;
+    background: #63150b;
+    padding: 5px 0 5px 0;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    border-collapse:collapse ;
+}
+
+th {
+    padding: 10px 0 10px 0;
+    background-color: black;
+    color: aliceblue;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    border-collapse:collapse ;
+}
+/*Formulaire coaching*/
+#body-formulaire{
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-column-start: 2;
+    height: 500px;
+    margin-bottom: 70px;
+}
+#head-coaching{
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+    margin: 20px 0 20px 0;
+}
+#paragraph-coach{
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 20px;
+
+}
+#formulaire {
+    margin-top: 10px;
+    grid-column-end: 3;
+    color: white;
+    text-align: center;
+    border: solid 1px;
+    border-color: #63150b;
+    border-radius: 5px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+}
+
+form {
+    font-size: 1.5rem;
+}
+#submit{
+    width: 20%;
+    font-size: 140%;
+}
+
+/* QUESTIONNAIRE */
+.paragraph-questionnaire{
+    text-align: center;
+    margin: 2em 3em 2em 3em;
+}
+
+.title-questionnaire{
+    text-align: center;
+    margin-left: 3em;
+    margin-right: 3em;
 }
 
 /* FOOTER */
@@ -286,24 +400,27 @@ body {
 .rotate {
     transform: rotate(180deg);
 }
+
 /*--------------------------responsive-------------------------------------*/
 /*En Dessous de 600px*/
 @media screen and (max-width: 600px) {
-    #navbar-top-desktop {
-        display: none;
-    }
+
     #youtube-desktop-img-1 {
         display: none;
     }
+
     #sponsor {
         display: none;
     }
+
     #sponsor-text {
         display: none;
     }
+
     #menu-footer {
         display: none;
     }
+
     #home-stream {
         padding-top: 56.25%;
         position: relative;
@@ -316,6 +433,7 @@ body {
         height: 100%;
         top: 0;
     }
+
     .follow-sub {
         display: flex;
         color: #B91010;
@@ -328,23 +446,22 @@ body {
         align-items: center;
         justify-content: center;
     }
+
     #sub-follow {
         margin-top: 20px;
     }
-
 
 
 }
 
 /* En Dessus de 600px*/
 @media screen and (min-width: 600px) {
-    #menu-burger {
-        display: none;
-    }
+
 
     #navbar-top {
         justify-content: space-evenly;
     }
+
     #line-top {
         width: 100%;
         height: 0.5rem;
@@ -374,14 +491,17 @@ body {
     .sponsor {
         display: none;
     }
+
     #youtube-desktop-img {
         background-image: linear-gradient(#3a2e2e, #b91010);
-        grid-column: 2/3 ;
+        grid-column: 2/3;
         grid-row: 1/2;
     }
+
     #youtube-desktop-img-1 {
         padding: 20px;
     }
+
     #sponsor-container {
         grid-column: 2/3;
         grid-row: 2/3;
@@ -391,25 +511,31 @@ body {
         justify-content: center;
 
     }
+
     #sponsor {
         height: 100%;
         width: 100%;
     }
+
     #sponsor-text {
         position: absolute;
         font-size: clamp(1rem, 5vw, 5rem);
     }
+
     #dropdown-menu {
         display: none;
     }
+
     #menu-footer {
         display: flex;
         justify-content: space-evenly;
         margin-top: 40px;
     }
+
     #menu-footer li {
         font-size: clamp(1rem, 1.5vw, 5rem);
     }
+
     .container-footer {
         display: flex;
         flex-direction: column;
@@ -417,31 +543,38 @@ body {
         margin-top: 10px;
 
     }
+
     .container-footer i {
         margin-right: 10px;
     }
+
     .dropdown-menu {
         display: none;
     }
+
     #chat-embed {
         display: block;
         width: 100%;
         height: 100%;
     }
+
     #home-stream {
         display: grid;
         grid-template-columns: 75% 25%;
-        grid-template-rows: 80vh ;
+        grid-template-rows: 80vh;
     }
+
     #player-stream {
         width: 100%;
         height: 100%;
     }
+
     #container-connection {
         display: grid;
         grid-template-columns: 75% 25%;
         align-items: center;
     }
+
     .follow-sub {
         display: flex;
         color: #B91010;
@@ -462,39 +595,48 @@ body {
     #sub-text {
         color: #B91010;
     }
+
     #container-sponsor {
         margin-top: 0;
     }
+
     #container-img-sponsor {
         display: grid;
         grid-template-columns: 5% 30% 30% 30% 5%;
     }
+
     #container-eneba {
         grid-column-start: 2;
         grid-column-end: 3;
     }
+
     #container-razer {
-        grid-column-start:  4 ;
+        grid-column-start: 4;
         grid-column-end: 5;
     }
+
     #container-lvlup {
         grid-column: 3 / 4;
         grid-row: 1 / 2;
     }
+
     #title-sponsor {
-        font-size: clamp(4vw,5vw, 2em);
+        font-size: clamp(4vw, 5vw, 2em);
     }
 
 
 }
+
 /* En dessous de 1150px*/
-@media screen  and (max-width: 1150px){
+@media screen  and (max-width: 1150px) {
     #chat-embed {
         display: none;
     }
+
     #player-stream {
         grid-column: 1 / 3;
     }
+
     #follow-text {
         display: none;
     }
@@ -506,12 +648,37 @@ body {
     .fa-bahai {
         font-size: 30px;
     }
+
     .fa-heart {
         font-size: 30px;
     }
+
     .follow-sub {
         height: 60px;
         width: 60px;
     }
 
+}
+
+/*EN DESSUS DE 1060PX*/
+@media screen and (min-width: 1060px) {
+
+    #menu-burger {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 1060px) {
+    #navbar-top-desktop {
+        display: none;
+    }
+
+    #navbar-top {
+        justify-content: flex-start;
+    }
+
+    #navigation {
+        margin-left: 25px;
+    }
 }

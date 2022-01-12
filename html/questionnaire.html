@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Riskin.tv</title>
+    <link href="https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css" rel="stylesheet">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="../css/style.css" rel="stylesheet">
+    <script crossorigin="anonymous" src="https://kit.fontawesome.com/eff21d28c7.js"></script>
+    <script src="../javascript/app.js"></script>
+</head>
+<body>
+<header id="navbar-top">
+    <div id="navigation">
+        <button id="menu-burger" onclick="toggleMenu()">
+            <span class="button-menu"></span>
+            <span class="button-menu"></span>
+            <span class="button-menu"></span>
+        </button>
+        <img alt="Logo de Riskin" id="img-logo" src="../Home/Pictures/Logo-riskin.png">
+        <div id="overlay" onclick="toggleMenu()">
+            <div id="overlay-content">
+                <a href="index.html">ACCUEIL</a>
+                <a href="stream.html">STREAM</a>
+                <a href="sponsor.html">SPONSOR</a>
+                <a href="palmares.html">PALMARÈS</a>
+                <a href="coaching.html">COACHING</a>
+                <a href="questionnaire.html">QUESTIONNAIRE</a>
+
+            </div>
+        </div>
+    </div>
+    <div id="navbar-top-desktop">
+        <a href="index.html">ACCUEIL</a>
+        <a href="stream.html">STREAM</a>
+        <a href="sponsor.html">SPONSOR</a>
+        <a href="palmares.html">PALMARÈS</a>
+        <a href="palmares.html">COACHING</a>
+        <a href="questionnaire.html">QUESTIONNAIRE</a>
+    </div>
+
+
+</header>
+<div id="line-top"></div>
+<h1 id="main-title-questionnaire">Questionnaire</h1>
+<h2 class="title-questionnaire">Expliquer la différence entre une requête HTTP synchrone et asynchrone:</h2>
+<p class="paragraph-questionnaire">Dans la transmission synchrone les données circulent sous forme de de blocs et
+    nécessite une synchronisation entre
+    l’expéditeur et le destinataire pour que l’expéditeur sache ou commence le nouvel octet puisqu’il n’y a pas d’écart
+    entre les données. Très utile pour transférer une grande quantité de données.
+    Dans la transmission asynchrone les données circulent en mode semi duplex, 1 octet. C’est un flux continu d’octets.
+    Il n’a pas besoin d’horloge pour la synchronisation. C’est simple, rapide et économique. Par exemple comme les
+    courriels, forums ou la télévision. </p>
+<h2 class="title-questionnaire">Expliquer les différences fondamentales entre 3 navigateurs web et expliquer où on peut
+    trouver leur compatibilité CSS:</h2>
+<p class="paragraph-questionnaire">La différence aujourd’hui est moindre, la ou google chrome va chercher à être le plus
+    rapide possible avec
+    l’implantation d’un maximum de standards web pour ces utilisateur, firefox va chercher à donner le plus d’outils
+    possible pour aider les développeur et essayer de démocratiser celui-ci et Safari va tout faire pour utiliser le
+    minimum de ressource possible pour fonctionner le plus efficacement possible tout en intégrant des nouveautés chaque
+    années. Le site <a href="https://caniuse.com/" target="_blank">caniuse.com</a> vous montre la compatibilité des navigateurs web et même des application mobile Ou sinon
+    sur <a href="https://developer.mozilla.org/en-US/" target="_blank">developer.mozzila.org</a> si vous chercher
+    une propriété CSS en bas de page ils vont vous dire avec qu’elle
+    navigateur elle est compatible.</p>
+<h2 class="title-questionnaire">Écrire vos recommandations (best practice) pour programmer un site web en HTML /
+    CSS:</h2>
+<p class="paragraph-questionnaire">Apprendre à lire et comprendre la documentations pour HTML / CSS comme ça ça vous
+    évite de perdre trop de temps.
+    Avoir un bon éditeur de text avec un emmet puissant qui permet d’avoir de l’autocomplétion facilement et de moins se
+    tromper dans ces lignes de codes. Faire du mobilefirst pour le responsive design c’est plus facile d’agrandir des
+    éléments que de passer beaucoup de temps à faire pleins de média queries et ne plus savoir ou donner de la tête.
+    Bien s’organiser dans l’arborescence de ces fichiers CSS et HTML</p>
+<h2 class="title-questionnaire">Décrire les aspects juridiques qui doivent être pris en compte et respectés sur un site
+    web (droits d’auteur,
+    protection de la personnalité):</h2>
+<p class="paragraph-questionnaire">Vous devez faire attention au choses que vous mettez sur votre site web par exemple
+    vous ne pouvez pas utiliser des
+    images non libre de droit pour faire la promotion de quelque chose. Vous devez respecter les consignes du RGPD et du
+    LPD sur la protection des données. Mettre les mentions légales du site. Faire attention au contenu du site, vous ne
+    pouvez pas mettre n’importe quoi sur votre site web. Mettre un CGU (Les conditions générales d’utilisation) qui sert
+    de contrat entre l’utilisateur du site et l’éditeur du site web pour par exemple que l’internaute ne puisse poster
+    des choses illégale.</p>
+<h2 class="title-questionnaire">Quels sont les formats multimédias supportés nativement par HTML 5:</h2>
+<p class="paragraph-questionnaire">En formats vidéo HTML 5 supporte Webm/VP8, Mp4/H.264, Ogg/Theora. Et en format audio
+    il supporte Ogg/Vorbis, WAV/PCM,
+    MP3, AAC.</p>
+
+<footer>
+
+    <div id="dropdown-menu">
+        <div class="dropdown-menu">
+            <div onclick="openandCloseDropdownMenu1()">
+                <a id="nav-footer">NAVIGATION <i class="fas fa-chevron-down icon-transition" id="nav-icon"></i></a>
+            </div>
+            <ul class="sub-menu" id="menu1">
+                <li><a href="index.html">ACCUEIL</a></li>
+                <li><a href="stream.html">STREAM</a></li>
+                <li><a href="https://www.youtube.com/c/RiskiNHD">YOUTUBE</a></li>
+                <li><a href="sponsor.html">SPONSOR</a></li>
+            </ul>
+        </div>
+
+        <div class="dropdown-menu">
+            <div onclick="openandCloseDropdownMenu2()">
+                <a id="info-footer">INFORMATIONS <i class="fas fa-chevron-down icon-transition" id="info-icon"></i> </a>
+            </div>
+        </div>
+        <div class="dropdown-menu">
+            <div onclick="openandCloseDropdownMenu3()">
+                <a id="social-footer">RÉSEAUX SOCIAUX <i class="fas fa-chevron-down icon-transition"
+                                                         id="social-icon"></i> </a>
+            </div>
+            <ul class="sub-menu" id="menu3">
+                <li><a href="https://twitter.com/rsknxzu"><i class="fa fa-twitter"></i>TWITTER</a></li>
+                <li><a href="https://www.youtube.com/c/RiskiNHD"><i class="fa fa-youtube-play"></i>YOUTUBE</a></li>
+                <li><a href="https://www.instagram.com/rsknxzu/?hl=fr"><i class="fa fa-instagram"></i>INSTAGRAM</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="menu-footer">
+        <div>
+            <h2>NAVIGATION</h2>
+            <ul class="container-footer">
+                <li><a href="index.html">ACCUEIL</a></li>
+                <li><a href="stream.html">STREAM</a></li>
+                <li><a href="https://www.youtube.com/c/RiskiNHD">YOUTUBE</a></li>
+                <li><a href="sponsor.html">SPONSOR</a></li>
+            </ul>
+        </div>
+        <div>
+            <h2>INFORMATIONS</h2>
+        </div>
+        <div>
+            <h2>RÉSEAUX SOCIAUX</h2>
+            <ul class="container-footer">
+                <li><a href="https://twitter.com/rsknxzu"><i class="fa fa-twitter"></i>TWITTER</a></li>
+                <li><a href="https://www.youtube.com/c/RiskiNHD"><i class="fa fa-youtube-play"></i>YOUTUBE</a></li>
+                <li><a href="https://www.instagram.com/rsknxzu/?hl=fr"><i class="fa fa-instagram"></i>INSTAGRAM</a></li>
+            </ul>
+        </div>
+    </div>
+
+</footer>
+
+</body>
+</html>
